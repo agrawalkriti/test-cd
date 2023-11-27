@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sredis
+  name: redis
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: stage-app-platform
+  project: default
   source:
     chart: redis
     repoURL: https://charts.bitnami.com/bitnami
