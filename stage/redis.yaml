@@ -29,7 +29,7 @@ spec:
           enabled: true
   destination:
     namespace: redis
-    name: in-cluster
+    server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       prune: true
